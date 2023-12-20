@@ -26,5 +26,14 @@ if __name__ == "__main__":
         package_dir={"": "src"},
         packages=setuptools.find_packages(where='src'),
         include_package_data=True,
-        package_data={"": ["examples/*"]},
+        package_data={'SchNet4AIM': [
+                'examples/databases/*.json',
+                'examples/databases/*.npz',
+                'examples/extrapolation/13P-CO2/*.txt',
+                'examples/extrapolation/13P-CO2/*.xyz',
+                'examples/chemical_reaction/*.txt',
+                'examples/chemical_reaction/*.xyz',
+                'examples/models/electronic/*.txt',
+                'examples/models/energetic/*.txt',
+        ]}
     )
