@@ -26,6 +26,7 @@ if __name__ == "__main__":
         package_dir={"": "src"},
         packages=setuptools.find_packages(where='src'),
         package_data={
-        'SchNet4AIM': ['examples/databases/electronic.json],
-        },
+        'SchNet4AIM': [
+            'examples/databases/electronic.json'
+        ]},
     )
