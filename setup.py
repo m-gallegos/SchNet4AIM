@@ -24,7 +24,7 @@ if __name__ == "__main__":
         install_requires=required,
         zip_safe= False,
         package_dir={"": "src"},
-        packages=find_packages(where='src'),
+        packages=setuptools.find_packages(where='src'),
         package_data={
         'SchNet4AIM': ['examples/**/*'],
         },
