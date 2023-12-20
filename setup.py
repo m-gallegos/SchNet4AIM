@@ -25,7 +25,7 @@ if __name__ == "__main__":
         zip_safe= False,
         package_dir={"": "src"},
         package_data={
-        'SchNet4AIM': ['examples/*'],
+        'SchNet4AIM': ['examples/**/*'],
         },
         packages=setuptools.find_packages(where="src"),
     )
