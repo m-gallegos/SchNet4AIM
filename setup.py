@@ -27,5 +27,4 @@ if __name__ == "__main__":
         package_data={
         'SchNet4AIM': ['examples/**/*'],
         },
-        packages=setuptools.find_packages(where="src"),
     )
