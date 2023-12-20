@@ -1,1 +1,1 @@
-include examples/*
+recursive-include examples *
