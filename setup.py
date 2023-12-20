@@ -34,6 +34,8 @@ if __name__ == "__main__":
                 'examples/chemical_reaction/*.txt',
                 'examples/chemical_reaction/*.xyz',
                 'examples/models/electronic/*.txt',
+                'examples/models/electronic/model*',
                 'examples/models/energetic/*.txt',
+                'examples/models/energetic/model*',
         ]}
     )
