@@ -23,6 +23,9 @@ if __name__ == "__main__":
         license='MIT',
         install_requires=required,
         zip_safe= False,
-        package_dir={"": "src", "examples"},
+        package_dir={"": "src"},
+        package_data={
+        'SchNet4AIM': ['examples/*'],
+        },
         packages=setuptools.find_packages(where="src"),
     )
