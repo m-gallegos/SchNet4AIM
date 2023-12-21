@@ -29,7 +29,6 @@ if __name__ == "__main__":
         package_data={'SchNet4AIM': [
                 'examples/databases/*.json',
                 'examples/databases/*.npz',
-                'examples/extrapolation/13P-CO2/*.txt',
                 'examples/extrapolation/13P-CO2/*.xyz',
                 'examples/chemical_reaction/*.txt',
                 'examples/chemical_reaction/*.xyz',
@@ -38,6 +37,7 @@ if __name__ == "__main__":
                 'examples/models/energetic/*.txt',
                 'examples/models/energetic/model*',
                 'examples/utils/*.py',
+                'examples/scripts/*.py',
                 'examples/*.py',
         ]}
     )
