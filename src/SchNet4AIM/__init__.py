@@ -1,6 +1,6 @@
 print(
 """
-##############################################################################
+##################################################################################
 
                                ~ SchNet4AIM ~
                                   (v 1.0)
@@ -9,13 +9,13 @@ print(
         Theoretical Chemical Physics Group, Univeristy of Luxembourg.
 
 M. Gallegos, V. Vassilev-Galindo, I. Poltavsky, A. M. Pendas and A. Tkatchenko
-##############################################################################
+##################################################################################
 
-A code to train SchNet models on the prediction of atomic and pairwise Atoms.
+A code to train SchNet models on the prediction of atomic and pairwise properties.
 In. Molecules. (AIM) properties. It relies on the SchNetPack suite:
  - J. Chem. Theory Comput. 2019, 15 (1): 448-455.
  - J. Chem. Phys. 2023, 158 (14): 144801.
-##############################################################################
+##################################################################################
 
 """
 )
