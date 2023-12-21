@@ -15,12 +15,12 @@ time.
 
 The environment variables can be easily defined using a simple block of python code (which should be included in the heading of the training or prediction scripts):
 
-    dbname          = "./database_q.db"   # name of the database used throughout the training
+    dbname          = "./database_q.db"   # name of the database used throughout the training (*.json or *.db file formats are allowed)
     elements        =  [1,8]              # possible atomic numbers of the elements found in the database (e.g H,O)
     
     # Setting the bash environment variables controlling the type of property and database used.
     import os
-    os.environ['Pmode']   = mode
+    os.environ['Pmode']   = mode          # 1p (atomic properties) or 2p (pairwise properties).
     os.environ['DBmode']  = dbmode
     os.environ['frset']   = os.pathsep.join(str(i) for i in sorted(elements))
 
@@ -41,6 +41,9 @@ The code requires other Python modules to run which will be installed along with
     python -m venv venv
     source /venv/bin/activate  
 
+# Examples
+
+Along with the source files of SchNet4AIM, proptorypical examples on how to use it are gathered in the /examples/scripts/ folder. Particularly, we include a general script (predict_QTAIM_electron_metrics.py) to predict the QTAIM electronic metrics (atomic charge, Q, localization index, LI, and delocalization index, DI) of a C, O, H and N neutral molecule using the built-in prototypical SchNet4AIM models. 
 
 # References
 
