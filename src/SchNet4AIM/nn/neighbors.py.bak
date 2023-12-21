@@ -180,7 +180,7 @@ def triple_distances(
         offset_idx_k = offset_idx_k.view(B * A, T)
         offsets = offsets.view(B * A, -1, D)
 
-        # Construct auxiliary array for advanced indexing
+        # Construct auxiliary aray for advanced indexing
         idx_offset_m = torch.arange(B * A, device=positions.device, dtype=torch.long)[
             :, None
         ]
