@@ -45,6 +45,11 @@ The code requires other Python modules to run which will be installed along with
 
 Along with the source files of SchNet4AIM, proptorypical examples on how to use it are gathered in the /examples/scripts/ folder. Particularly, we include a general script (predict_QTAIM_electron_metrics.py) to predict the QTAIM electronic metrics (atomic charge, Q, localization index, LI, and delocalization index, DI) of a C, O, H and N neutral molecule using the built-in prototypical SchNet4AIM models. 
 
+    python predict_QTAIM_electron_metrics.py geom.xyz 6
+
+
+    python explain_group_DI.py 300K_trj.xyz
+
 # References
 
 [1] (I) K. Schütt, P.-J. Kindermans, H. E. Sauceda Felix, S. Chmiela, A. Tkatchenko and K.-R. Müller, Advances in Neural Information Processing Systems, 2017. (II) K. T. Schütt, H. E. Sauceda, P.-J. Kindermans, A. Tkatchenko and K.-R. Müller, J. Chem. Phys., 2018, 148, 241722. (III)  K. T. Schütt, P. Kessel, M. Gastegger, K. A. Nicoli, A. Tkatchenko and K.-R. Müller, J. Chem. Theory Comput., 2019, 15, 448–455.
