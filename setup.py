@@ -21,6 +21,7 @@ if __name__ == "__main__":
             "SchNet4AIM": "https://github.com/m-gallegos/SchNet4AIM"
         },
         license='MIT',
+        python_requires='>=3.8.2',
         install_requires=required,
         zip_safe= False,
         package_dir={"": "src"},
