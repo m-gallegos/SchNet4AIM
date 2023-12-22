@@ -183,7 +183,7 @@ Executing the code will print the results of the XCAI analysis of the group DI w
     # Dominant components saved to  13P-CO2_trj_dominant_di_0.8.txt
    ----------------------------------------------------------------------------------
 
-In this particular case, variables 7 and 8 (corresponding to the O3-N20 and O3-H23 interactions) dominate (up to an 80%) the net group deloclization between the CO2 and NH2 moieties. Besides this, the script produces two files: ${trj_file}$_group_di.txt (gathering the evolution of the group DI along with its pairwise components trhoughout the simulation) and the ${trj_file}$_dominant_di_${threshold}$.txt (gathering the evolution of the group DI along with the reconstructed value from its dominant pairwise contributions).
+In this particular case, variables 7 and 8 (corresponding to the O3-N20 and O3-H23 interactions) dominate (up to an 80%) the net group deloclization between the CO2 and NH2 moieties. Besides this, the script produces two files: trj_file_group_di.txt (gathering the evolution of the group DI along with its pairwise components trhoughout the simulation) and the trj_file_dominant_di_threshold.txt (gathering the evolution of the group DI along with the reconstructed value from its dominant pairwise contributions).
 
 # References
 
