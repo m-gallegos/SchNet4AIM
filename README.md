@@ -30,14 +30,6 @@ The environment variables can be easily defined using a simple block of python c
 
 **SchNet4AIM can be installed under Python >= 3.7.3 and <= 3.11.5 versions. Furthermore, it is strongly enocuraged to use one of the latest pip managers (i.e 23.3.1 or 23.3.2 up to the date of release of SchNet4AIM) to aovid incompatibility problems.**
 
-SchNet4AIM can be easily installed using the pip Python package manager:
-
-    pip install git+https://github.com/m-gallegos/SchNet4AIM.git
-
-Alternatively, one can download the zip file from the SchNet4AIM GitHub and run the following command:
-
-    pip install SchNet4AIM-main.zip
-
 The code requires other Python modules to run which will be installed along with the former (if not present in the local machine). To avoid incompatibilities, it is generally advisable to install and run SchNet4AIM under a Python environment:
 
     python -m venv venv
@@ -47,7 +39,15 @@ After activating the Python environment, make sure to update the pip manager as:
     
     pip install --upgrade pip
 
-**Note: some (specially old) architectures are known to struggle accessing certain libraries or may raise problems (e.g RunTimeErrors) when importing certain modules (as for instance found in the particlar case of torch and sklearn packages). These problems are, however, not related to SchNet4AIM and are likely to be caused by Python incompatibility issues in old archiectures.**
+SchNet4AIM can be easily installed using the pip Python package manager:
+
+    pip install git+https://github.com/m-gallegos/SchNet4AIM.git
+
+Alternatively, one can download the zip file from the SchNet4AIM GitHub and run the following command:
+
+    pip install SchNet4AIM-main.zip
+
+**Some (specially old) architectures are known to struggle accessing certain libraries or may raise problems (e.g RunTimeErrors) when importing certain modules (as for instance found in the particlar case of torch and sklearn packages). These problems are, however, not related to SchNet4AIM and are likely to be caused by Python incompatibility issues in old archiectures.**
 
 # Examples
 
