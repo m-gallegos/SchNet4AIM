@@ -53,6 +53,27 @@ The script /examples/scripts/predict_QTAIM_electron_metrics.py is a simple pytho
 
   * geom.xyz : file containing the molecular geometry in XYZ cartesian coordinates.
   * nproc    : number of CPUs to be employed in the calculation.
+
+Executing the previous script will produce an output file, geom_s4aim.qtaim, which comprises the SchNet4AIM predictions along with their uncertainties.The output format used is the following: first, the atomic properties (charges and LIs) appear in increasing order of the atoms, 
+
+ -----------------------------------------------------------------------------
+ ATOMIC CHARGE (Q)
+ -----------------------------------------------------------------------------
+ Atom      1 (C )  q = -0.031 +- 0.000 : -0.031 to -0.031 electrons.
+ Atom      2 (C )  q = -0.029 +- 0.000 : -0.029 to -0.029 electrons.
+ Atom      3 (C )  q = -0.004 +- 0.000 : -0.004 to -0.004 electrons.
+ Atom      4 (C )  q = -0.004 +- 0.000 : -0.004 to -0.004 electrons.
+ . . . . . . . . 
+ . . . . . . . . 
+ -----------------------------------------------------------------------------
+ ELECTRON LOCALIZATION INDEX (LI)
+ -----------------------------------------------------------------------------
+ Atom      1 (C )  li =  3.968 +- 0.000 :  3.968 to  3.968 electrons.
+ Atom      2 (C )  li =  3.968 +- 0.000 :  3.968 to  3.968 electrons.
+ Atom      3 (C )  li =  3.889 +- 0.000 :  3.889 to  3.889 electrons.
+ Atom      4 (C )  li =  3.889 +- 0.000 :  3.889 to  3.889 electrons.
+
+followed by the delocalisation indices of each of the pairs. For the latter, the results for the single pairs (upper triangular part of the matrix) are presented.
     
 ## XCAI: Unravelling the dominant contributions to the group DI.
 
