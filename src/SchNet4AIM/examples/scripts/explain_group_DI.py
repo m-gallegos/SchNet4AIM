@@ -4,10 +4,19 @@
 # performs an analysis on the local components that influence the behavior of 
 # a global feature across a set of frames.
 
-# Execution: python ./XCAI_DI.py  trj_file.xyz
+# Execution: python ./explain_group_DI.py trj_file.xyz
 # 
 # trj_file.xyz: a trajectory file in XYZ format (only CHON molecules).
-
+#
+# For instance:
+#
+# python ./explain_group_DI.py 13P-CO2_trj.xyz
+#
+# This will produce the 13P-CO2_trj_group_di.txt and
+# 13P-CO2_trj_dominant_di_0.8.txt output files, showing the most relevant
+# contributions to the group DI between a CO2 and a NH2 group in the 13P-
+# CO2 complexation (900 K).
+#
 # INPUT VARIABLES:
 #----------------------------------------------------------------------------
 group_a  =  [1,2,3]      # Define atom numbers of group A (starting at 1).
