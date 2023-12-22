@@ -133,10 +133,10 @@ Following, we show an example of the values taken by the previous input variable
 
     # INPUT VARIABLES:
     #----------------------------------------------------------------------------
-    group_a  =  [1,2,3]      # Define atom numbers of group A (starting at 1).
-    group_b  =  [20,23,27]   # Define atom numbers of group B (starting at 1).
-    threshold=  0.8          # Cumulative explainability threshold (0 to 1).
-    nproc    =  8            # Number of processors to employ.
+    group_a  =  [1,2,3]      # CO2 group formed by atoms 1, 2 and 3.
+    group_b  =  [20,23,27]   # NH2 group of 13P formed by atoms 20, 23 and 27.
+    threshold=  0.8          # The dominant contributions will be those which explain at least 80% of the overall group DIs.
+    nproc    =  8            # Use 8 CPUs.
     #----------------------------------------------------------------------------
 
 
