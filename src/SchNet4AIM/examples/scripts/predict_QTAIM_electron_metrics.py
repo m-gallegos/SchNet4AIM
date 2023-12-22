@@ -8,6 +8,9 @@
 # 
 # file.xyz: geometry file in XYZ format (only CHON molecules).
 # nproc   : number of CPUs to be used in the process.
+#
+# For instance: python ./predict_QTAIM_electron_metrics.py naphthalene.xyz 4
+# This will create the file naphthalene_s4aim.qtaim, gathering the predictions.
 #----------------------------------------------------------------------------
 
 
