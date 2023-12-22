@@ -49,7 +49,7 @@ In addition to the SchNet4AIM source code, this repository also includes a set o
 
     python predict_QTAIM_electron_metrics.py geom.xyz 6
 
-## XCAI: Unravelling the dominant pairwise contributions to the group electron delocalization
+## XCAI: Unravelling the dominant contributions to the group DI.
 
     python explain_group_DI.py 300K_trj.xyz
 
