@@ -139,6 +139,50 @@ Following, we show an example of the values taken by the previous input variable
     nproc    =  8            # Use 8 CPUs.
     #------------------------------------------------------------------------------------------------------------------------
 
+Executing the code will print the results of the XCAI analysis of the group DI within the frames collected in the trajectory file, shown in the standard output (sreen),
+
+   ----------------------------------------------------------------------------------
+                          XCAI-GROUP ELECTRON DELOCALIZATION 
+    ---------------------------------------------------------------------------------
+    # GROUP A:  [1, 2, 3]
+    # GROUP B:  [20, 23, 27]
+    # Pair-wise contributions to A-B DI :
+    - P1-20  Atom 1    (C ) Atom 20   (N ).
+    - P1-23  Atom 1    (C ) Atom 23   (H ).
+    - P1-27  Atom 1    (C ) Atom 27   (H ).
+    - P2-20  Atom 2    (O ) Atom 20   (N ).
+    - P2-23  Atom 2    (O ) Atom 23   (H ).
+    - P2-27  Atom 2    (O ) Atom 27   (H ).
+    - P3-20  Atom 3    (O ) Atom 20   (N ).
+    - P3-23  Atom 3    (O ) Atom 23   (H ).
+    - P3-27  Atom 3    (O ) Atom 27   (H ).
+    ----------------------------------------------------------------------------------
+    # Weights of each pairwise DI to the group DI:
+    - P3-23  (var num     8):   0.6280
+    - P3-20  (var num     7):   0.4429
+    - P2-20  (var num     4):  -0.0883
+    - P1-23  (var num     2):   0.0195
+    - P2-27  (var num     6):  -0.0088
+    - P1-27  (var num     3):  -0.0071
+    - P1-20  (var num     1):   0.0060
+    - P3-27  (var num     9):   0.0052
+    - P2-23  (var num     5):   0.0026
+    # Importance score of each pairwise DI to the group DI:
+    - P3-23  (var num     8):   0.5197
+    - P3-20  (var num     7):   0.3665
+    - P2-20  (var num     4):   0.0731
+    - P1-23  (var num     2):   0.0162
+    - P2-27  (var num     6):   0.0072
+    - P1-27  (var num     3):   0.0059
+    - P1-20  (var num     1):   0.0050
+    - P3-27  (var num     9):   0.0043
+    - P2-23  (var num     5):   0.0022
+    # Variables  [8, 7]  explain (at least)  0.8  of the group DI.
+    ----------------------------------------------------------------------------------
+    # Group DIs saved to            13P-CO2_trj_group_di.txt
+    # Dominant components saved to  13P-CO2_trj_dominant_di_0.8.txt
+   ----------------------------------------------------------------------------------
+
 
 # References
 
