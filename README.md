@@ -122,6 +122,13 @@ In the  /examples/scripts/ folder you will find an example of a typical trajecto
     . . . . . . . .
     continues for as many frames as snapshoots of the trajectory.
 
+Besides this, the script also requires the follwoing variables to be specified inside the explain_group_DI.py file:
+  * trj_file.xyz
+  * group_a   : (list of integers) Define atom numbers of group A (starting at 1).
+  * group_b   : (list of integers) Define atom numbers of group B (starting at 1).
+  * threshold : (float) Cumulative explainability threshold (0 to 1).
+  * nproc     : (int) Number of CPUs to be employed.
+
 # References
 
 [1] (I) K. Schütt, P.-J. Kindermans, H. E. Sauceda Felix, S. Chmiela, A. Tkatchenko and K.-R. Müller, Advances in Neural Information Processing Systems, 2017. (II) K. T. Schütt, H. E. Sauceda, P.-J. Kindermans, A. Tkatchenko and K.-R. Müller, J. Chem. Phys., 2018, 148, 241722. (III)  K. T. Schütt, P. Kessel, M. Gastegger, K. A. Nicoli, A. Tkatchenko and K.-R. Müller, J. Chem. Theory Comput., 2019, 15, 448–455.
