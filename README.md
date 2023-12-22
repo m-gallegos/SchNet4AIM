@@ -4,7 +4,7 @@ SchNet4AIM is a code designed to train SchNet [1] models on atomic (1p) and pair
 properties, such as those formulated within the context of the Quantum Theory of Atoms In Molecules (QTAIM). [2]
 
 * The architecture of SchNet4AIM is a slight modification of the original SchNetPack code, [2, III] the functions
-and routines of the latter which are not involvd in the training and prediction of 1p or 2p properties have been removed
+and routines of the latter which are not involved in the training and prediction of 1p or 2p properties have been removed
 for the sake of simplicity.
 * The code can run on both CPUs and GPUs. The use of the latter is generally advisable for the sake of computational
 time.
@@ -28,7 +28,7 @@ The environment variables can be easily defined using a simple block of python c
 
 # Installation
 
-**SchNet4AIM can be installed under Python >= 3.7.3 and <= 3.11.5 versions. Furthermore, it is strongly enocuraged to use one of the latest pip managers (i.e 23.3.1 or 23.3.2 up to the date of release of SchNet4AIM) to aovid incompatibility problems.**
+**SchNet4AIM can be installed under Python >= 3.7.3 and <= 3.11.5 versions. Furthermore, it is strongly encouraged to use one of the latest pip managers (i.e 23.3.1 or 23.3.2 up to the date of release of SchNet4AIM) to avoid incompatibility problems.**
 
 The code requires other Python modules to run which will be installed along with the former (if not present in the local machine). To avoid incompatibilities, it is generally advisable to install and run SchNet4AIM under a Python environment:
 
@@ -47,11 +47,11 @@ Alternatively, one can download the zip file from the SchNet4AIM GitHub and run 
 
     pip install SchNet4AIM-main.zip
 
-**Some (specially old) architectures are known to struggle accessing certain libraries or may raise problems (e.g RunTimeErrors) when importing certain modules (as for instance found in the particlar case of torch and sklearn packages). These problems are, however, not related to SchNet4AIM and are likely to be caused by Python incompatibility issues in old archiectures.**
+**Some (specially old) architectures are known to struggle accessing certain libraries or may raise problems (e.g RunTimeErrors) when importing certain modules (as for instance found in the particular case of torch and sklearn packages). These problems are, however, not related to SchNet4AIM and are likely to be caused by Python incompatibility issues in old architectures.**
 
 # Examples
 
-In addition to the SchNet4AIM source code, this repository also includes a set of prototype scripts to exemplify its use, collected in the /examples/scripts/ directory.In particular, we include two key templates, one aimed at predicting the electronic QTAIM properties (Q, LI and DI) from a molecular geoemtry (including uncertainty estimates) and the other devoted to the analysis of the pairwise components that dominate the electronic delocalization between two groups or fragments along a sequential process. We note in passing that both are based on the proof-of-concept models incorporated in SchNet4AIM and are therefore only suitable for treating neutral C,H,O,N molecules.
+In addition to the SchNet4AIM source code, this repository also includes a set of prototype scripts to exemplify its use, collected in the /examples/scripts/ directory.In particular, we include two key templates, one aimed at predicting the electronic QTAIM properties (Q, LI and DI) from a molecular geometry (including uncertainty estimates) and the other devoted to the analysis of the pairwise components that dominate the electronic delocalization between two groups or fragments along a sequential process. We note in passing that both are based on the proof-of-concept models incorporated in SchNet4AIM and are therefore only suitable for treating neutral C,H,O,N molecules.
 
 **Please note that the models included here are proof-of-concept examples used to show the applicability and potential of SchNet4AIM in predicting local quantum chemical properties. Therefore, for specific applications and scenarios, users must train their own models oriented to the desired chemical properties and spaces.**
 
@@ -61,10 +61,10 @@ The script /examples/scripts/predict_QTAIM_electron_metrics.py is a simple pytho
 
     python predict_QTAIM_electron_metrics.py geom.xyz nproc
 
-  * geom.xyz : file containing the molecular geometry in XYZ cartesian coordinates. In the  /examples/scripts/ folder you will find an exmaple of a typical geometry file (naphthalene.xyz).
+  * geom.xyz : file containing the molecular geometry in XYZ Cartesian coordinates. In the  /examples/scripts/ folder you will find an example of a typical geometry file (naphthalene.xyz).
   * nproc    : number of CPUs to be employed in the calculation.
 
-In the example, the geometry of naaphthalene is included.
+In the example, the geometry of naphthalene is included.
 ![Figure](src/SchNet4AIM/examples/scripts/naphthalene.png)
 
 Executing the previous script will produce an output file, geom_s4aim.qtaim, which comprises the SchNet4AIM predictions along with their uncertainties.The output format used is the following: first, the atomic properties (charges and LIs) appear in increasing order of the atoms, 
@@ -107,13 +107,13 @@ followed by the delocalization indices of each of the pairs. For the latter, the
     . . . . . . . . 
 We note in passing that the uncertainties are based on the accuracy with which SchNet4AIM reconstructs the total number of electrons of the molecule (either from the atomic charges or the localized and delocalized electron populations). Since the proof-of-concept models used have been independently trained, the latter terms are not bound to be exactly additive, which leads to the reported uncertainty in the predictions.
     
-## XCAI: Unravelling the dominant contributions to the group DI.
+## XCAI: Unraveling the dominant contributions to the group DI.
 
-The /examples/scripts/explain_group_DI.py script is a simple Python tempalte designed to identify the dominant pairwise interactions that dominate the behaviour of a global property (in this case, the group delocalization index), thanks to the inherent explainability of SchNet4AIM models. The script recieves a single command-line argument, being the name of the trajectory file in cartesian coordinates (**trj_file.xyz**)
+The /examples/scripts/explain_group_DI.py script is a simple Python template designed to identify the dominant pairwise interactions that dominate the behavior of a global property (in this case, the group delocalization index), thanks to the inherent explainability of SchNet4AIM models. The script receives a single command-line argument, being the name of the trajectory file in Cartesian coordinates (**trj_file.xyz**)
 
     python explain_group_DI.py trj_file.xyz
 
-  * trj_file.xyz: trajectory file comprising the evolution of the system in a sequential process. It uses a standard XYZ format (concatenation of XYZ files each of which corresponding to a frame or snapshoot of the system).
+  * trj_file.xyz: trajectory file comprising the evolution of the system in a sequential process. It uses a standard XYZ format (concatenation of XYZ files each of which corresponding to a frame or snapshot of the system).
   
 In the  /examples/scripts/ folder you will find an example of a typical trajectory file (13P-CO2_trj.xyz), with the following format:
 
@@ -133,7 +133,7 @@ In the  /examples/scripts/ folder you will find an example of a typical trajecto
     . . . . . . . .
     continues for as many frames as snapshoots of the trajectory.
 
-Besides this, the script also requires the follwoing variables to be specified inside the explain_group_DI.py file:
+Besides this, the script also requires the following variables to be specified inside the explain_group_DI.py file:
   * trj_file.xyz
   * group_a   : (list of integers) Define atom numbers of group A (starting at 1).
   * group_b   : (list of integers) Define atom numbers of group B (starting at 1).
@@ -150,7 +150,7 @@ Following, we show an example of the values taken by the previous input variable
     nproc    =  8            # Use 8 CPUs.
     #------------------------------------------------------------------------------------------------------------------------
 
-Executing the code will print the results of the XCAI analysis of the group DI within the frames collected in the trajectory file, shown in the standard output (sreen),
+Executing the code will print the results of the XCAI analysis of the group DI within the frames collected in the trajectory file, shown in the standard output (screen),
 
    ----------------------------------------------------------------------------------
                           XCAI-GROUP ELECTRON DELOCALIZATION 
@@ -194,7 +194,7 @@ Executing the code will print the results of the XCAI analysis of the group DI w
     # Dominant components saved to  13P-CO2_trj_dominant_di_0.8.txt
    ----------------------------------------------------------------------------------
 
-In this particular case, variables 7 and 8 (corresponding to the O3-N20 and O3-H23 interactions) dominate (up to an 80%) the net group deloclization between the CO2 and NH2 moieties. Besides this, the script produces two files: trj_file_group_di.txt (gathering the evolution of the group DI along with its pairwise components trhoughout the simulation) and the trj_file_dominant_di_threshold.txt (gathering the evolution of the group DI along with the reconstructed value from its dominant pairwise contributions). The latter can be easily plotted,
+In this particular case, variables 7 and 8 (corresponding to the O3-N20 and O3-H23 interactions) dominate (up to an 80%) the net group delocalization between the CO2 and NH2 moieties. Besides this, the script produces two files: trj_file_group_di.txt (gathering the evolution of the group DI along with its pairwise components throughout the simulation) and the trj_file_dominant_di_threshold.txt (gathering the evolution of the group DI along with the reconstructed value from its dominant pairwise contributions). The latter can be easily plotted,
 ![Figure](src/SchNet4AIM/examples/scripts/13P-CO2-NH2.png)
 showing that in such a particular time-window the CO2 molecule gets closer to one of the NH2 moieties of the 13P skeleton, resulting in the emergence of O-H and O-N interactions, in agreement with the SchNet4AIM XCAI trends.
 
