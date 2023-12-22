@@ -53,7 +53,7 @@ The script /examples/scripts/predict_QTAIM_electron_metrics.py is a simple pytho
 
     python predict_QTAIM_electron_metrics.py geom.xyz nproc
 
-  * geom.xyz : file containing the molecular geometry in XYZ cartesian coordinates.
+  * geom.xyz : file containing the molecular geometry in XYZ cartesian coordinates. In the  /examples/scripts/ folder you will find an exmaple of a typical geometry file (naphthalene.xyz).
   * nproc    : number of CPUs to be employed in the calculation.
 
 Executing the previous script will produce an output file, geom_s4aim.qtaim, which comprises the SchNet4AIM predictions along with their uncertainties.The output format used is the following: first, the atomic properties (charges and LIs) appear in increasing order of the atoms, 
@@ -102,7 +102,24 @@ The /examples/scripts/explain_group_DI.py script is a simple Python tempalte des
 
     python explain_group_DI.py trj_file.xyz
 
-  * trj_file.xyz: trajectory file comprising the evolution of the system in a sequential process. It uses a standard XYZ format (concatenation of XYZ files each of which corresponding to a frame or snapshoot of the system).
+  * trj_file.xyz: trajectory file comprising the evolution of the system in a sequential process. It uses a standard XYZ format (concatenation of XYZ files each of which corresponding to a frame or snapshoot of the system). In the  /examples/scripts/ folder you will find an example of a typical trajectory file (13P-CO2_trj.xyz), with the following format:
+
+    95    # Number of atoms
+    Frame 1
+    C     -0.4216901378      7.8480921389      3.3939225697
+    O     -0.6794395988      8.7715685111      3.9675109420
+    O     -0.1478306150      6.9300913248      2.8153027169
+    . . . . . . . . 
+    . . . . . . . . 
+    95    # Number of atoms
+    Frame 2
+    C     -0.4213420307      7.8921081530      3.3822648304
+    O     -0.7406936146      8.8399292588      4.0130434743
+    O     -0.1405877282      6.9341261177      2.8085651859
+    . . . . . . . . 
+    . . . . . . . .
+    continues for as many frames as snapshoots of the trajectory.
+
 # References
 
 [1] (I) K. Schütt, P.-J. Kindermans, H. E. Sauceda Felix, S. Chmiela, A. Tkatchenko and K.-R. Müller, Advances in Neural Information Processing Systems, 2017. (II) K. T. Schütt, H. E. Sauceda, P.-J. Kindermans, A. Tkatchenko and K.-R. Müller, J. Chem. Phys., 2018, 148, 241722. (III)  K. T. Schütt, P. Kessel, M. Gastegger, K. A. Nicoli, A. Tkatchenko and K.-R. Müller, J. Chem. Theory Comput., 2019, 15, 448–455.
