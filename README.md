@@ -39,7 +39,7 @@ After activating the Python environment, make sure to update the pip manager as:
     
     pip install --upgrade pip
 
-SchNet4AIM can be easily installed using the pip Python package manager:
+SchNet4AIM can then be easily installed as
 
     pip install git+https://github.com/m-gallegos/SchNet4AIM.git
 
