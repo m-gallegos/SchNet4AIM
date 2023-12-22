@@ -134,7 +134,7 @@ In the  /examples/scripts/ folder you will find an example of a typical trajecto
     continues for as many frames as snapshoots of the trajectory.
 
 Besides this, the script also requires the following variables to be specified inside the explain_group_DI.py file:
-  * trj_file.xyz
+
   * group_a   : (list of integers) Define atom numbers of group A (starting at 1).
   * group_b   : (list of integers) Define atom numbers of group B (starting at 1).
   * threshold : (float) Cumulative explainability threshold (0 to 1).
