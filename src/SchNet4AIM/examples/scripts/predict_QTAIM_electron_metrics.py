@@ -54,6 +54,7 @@ raw_dis = s4aim_general.predict_model_2P(dataset_ase,di_model_path)
 q_error=s4aim_uncertainty.calc_q_errors(raw_q[:, -1],atom_labels)
 li_di_error=s4aim_uncertainty.calc_li_di_errors(raw_li[:,-1],raw_dis[:,-1],atom_labels)
 #----------------------------------------------------------------
+s4aim_general.clean_file(name+".json")
 with open(xyzname.split(".xyz")[0]+"_s4aim.qtaim",'w') as f:
      f.write(" -----------------------------------------------------------------------------"+"\n")
      f.write(" ATOMIC CHARGE (Q)"+"\n")
