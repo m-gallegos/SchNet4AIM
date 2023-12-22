@@ -47,8 +47,13 @@ In addition to the SchNet4AIM source code, this repository also includes a set o
 
 ## Predicting QTAIM electronic properties.
 
-    python predict_QTAIM_electron_metrics.py geom.xyz 6
+The script /examples/scripts/predict_QTAIM_electron_metrics.py is a simple python template designed to ease the prediction of QTAIM electron metrics (localization index, LI, delocalization index, DI, and atomic charges, Q). It receives two command-line arguments:
 
+    python predict_QTAIM_electron_metrics.py geom.xyz nproc
+
+  * geom.xyz : file containing the molecular geometry in XYZ cartesian coordinates.
+  * nproc    : number of CPUs to be employed in the calculation.
+    
 ## XCAI: Unravelling the dominant contributions to the group DI.
 
     python explain_group_DI.py 300K_trj.xyz
