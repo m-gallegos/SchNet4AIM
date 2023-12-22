@@ -1,3 +1,4 @@
+from sklearn.decomposition import PCA
 import os 
 import numpy as np
 import json
@@ -5,7 +6,6 @@ from SchNet4AIM.data import atoms as s4aim_atoms
 import torch as torch
 from SchNet4AIM import AtomsLoader as s4aim_AtomsLoader
 from SchNet4AIM import create_subset as s4aim_create_subset
-from sklearn.decomposition import PCA
 import psutil
 
 def set_cpu_num(num_processors):
