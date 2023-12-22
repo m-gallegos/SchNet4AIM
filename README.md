@@ -56,6 +56,8 @@ The script /examples/scripts/predict_QTAIM_electron_metrics.py is a simple pytho
   * geom.xyz : file containing the molecular geometry in XYZ cartesian coordinates. In the  /examples/scripts/ folder you will find an exmaple of a typical geometry file (naphthalene.xyz).
   * nproc    : number of CPUs to be employed in the calculation.
 
+![Figure](src/SchNet4AIM/examples/scripts/naphthalene.png)
+
 Executing the previous script will produce an output file, geom_s4aim.qtaim, which comprises the SchNet4AIM predictions along with their uncertainties.The output format used is the following: first, the atomic properties (charges and LIs) appear in increasing order of the atoms, 
 
     -----------------------------------------------------------------------------
