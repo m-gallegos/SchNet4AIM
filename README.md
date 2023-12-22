@@ -98,8 +98,11 @@ We note in passing that the uncertainties are based on the accuracy with which S
     
 ## XCAI: Unravelling the dominant contributions to the group DI.
 
-    python explain_group_DI.py 300K_trj.xyz
+The /examples/scripts/explain_group_DI.py script is a simple Python tempalte designed to identify the dominant pairwise interactions that dominate the behaviour of a global property (in this case, the group delocalization index), thanks to the inherent explainability of SchNet4AIM models. The script recieves a single command-line argument, being the name of the trajectory file in cartesian coordinates (**trj_file.xyz**)
 
+    python explain_group_DI.py trj_file.xyz
+
+  * trj_file.xyz: trajectory file comprising the evolution of the system in a sequential process. It uses a standard XYZ format (concatenation of XYZ files each of which corresponding to a frame or snapshoot of the system).
 # References
 
 [1] (I) K. Schütt, P.-J. Kindermans, H. E. Sauceda Felix, S. Chmiela, A. Tkatchenko and K.-R. Müller, Advances in Neural Information Processing Systems, 2017. (II) K. T. Schütt, H. E. Sauceda, P.-J. Kindermans, A. Tkatchenko and K.-R. Müller, J. Chem. Phys., 2018, 148, 241722. (III)  K. T. Schütt, P. Kessel, M. Gastegger, K. A. Nicoli, A. Tkatchenko and K.-R. Müller, J. Chem. Theory Comput., 2019, 15, 448–455.
