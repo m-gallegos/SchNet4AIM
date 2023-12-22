@@ -102,7 +102,9 @@ The /examples/scripts/explain_group_DI.py script is a simple Python tempalte des
 
     python explain_group_DI.py trj_file.xyz
 
-  * trj_file.xyz: trajectory file comprising the evolution of the system in a sequential process. It uses a standard XYZ format (concatenation of XYZ files each of which corresponding to a frame or snapshoot of the system). In the  /examples/scripts/ folder you will find an example of a typical trajectory file (13P-CO2_trj.xyz), with the following format:
+  * trj_file.xyz: trajectory file comprising the evolution of the system in a sequential process. It uses a standard XYZ format (concatenation of XYZ files each of which corresponding to a frame or snapshoot of the system).
+  
+In the  /examples/scripts/ folder you will find an example of a typical trajectory file (13P-CO2_trj.xyz), with the following format:
 
     95    # Number of atoms
     Frame 1
