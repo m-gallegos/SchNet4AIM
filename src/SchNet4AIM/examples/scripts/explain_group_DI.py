@@ -15,7 +15,7 @@ group_b  =  [20,23,27]   # Define atom numbers of group B (starting at 1).
 threshold=  0.8          # Cumulative explainability threshold (0 to 1).
 nproc    =  8            # Number of processors to employ.
 #----------------------------------------------------------------------------
-
+import sklearn
 import os
 import importlib
 import sys
