@@ -291,7 +291,9 @@ def clean_trjfiles(frame):
     os.remove(frame)
     os.remove(frame.split(".xyz")[0]+".json")
     return None
-
+def clean_file(name):
+    os.remove(name)
+    return None
 def get_pair_labels(g1,g2):
     """
     A function to compute the pair labels of each of the contributions to the net DI
