@@ -43,7 +43,7 @@ The code requires other Python modules to run which will be installed along with
 
 # Examples
 
-Along with the source files of SchNet4AIM, proptorypical examples on how to use it are gathered in the /examples/scripts/ folder. Particularly, we include a general script (predict_QTAIM_electron_metrics.py) to predict the QTAIM electronic metrics (atomic charge, Q, localization index, LI, and delocalization index, DI) of a C, O, H and N neutral molecule using the built-in prototypical SchNet4AIM models. 
+In addition to the SchNet4AIM source code, this repository also includes a set of prototype scripts to exemplify its use, collected in the /examples/scripts/ directory.In particular, we include two key templates, one aimed at predicting the electronic QTAIM properties (Q, LI and DI) from a molecular geoemtry (including uncertainty estimates) and the other devoted to the analysis of the pairwise components that dominate the electronic delocalization between two groups or fragments along a sequential process. We note in passing that both are based on the proof-of-concept models incorporated in SchNet4AIM and are therefore only suitable for treating neutral C,H,O,N molecules.
 
     python predict_QTAIM_electron_metrics.py geom.xyz 6
 
