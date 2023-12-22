@@ -140,7 +140,7 @@ Besides this, the script also requires the following variables to be specified i
   * threshold : (float) Cumulative explainability threshold (0 to 1).
   * nproc     : (int) Number of CPUs to be employed.
 
-Following, we show an example of the values taken by the previous input variables (to be used in combination with the 13P-CO2_trj.xyz file.
+Following, we show an example of the values taken by the previous input variables (to be used in combination with the 13P-CO2_trj.xyz file.)
 
     # INPUT VARIABLES:
     #------------------------------------------------------------------------------------------------------------------------
