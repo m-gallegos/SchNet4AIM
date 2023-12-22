@@ -10,7 +10,7 @@ for the sake of simplicity.
 time.
 * Before importing or initializing the SchNet4AIM module, three bash environment variables must be specified:
   * Pmode : defines the type of target property. It can take two different values: "1p", for atomic properties, or "2p", for pair-wise properties.
-  * DBmode: defines format employed for the database. It can take the "json" or "db" values, corresponding to the JSON and ASE-SQLite [3] database formats, respectively.
+  * DBmode: defines the format employed for the database. It can take the "json" or "db" values, corresponding to the JSON and ASE-SQLite [3] database formats, respectively.
   * frset : defines the list of possible elements found in the database employed for the training, given in terms of their atomic numbers.
 
 The environment variables can be easily defined using a simple block of python code (which should be included in the heading of the training or prediction scripts):
