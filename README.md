@@ -72,8 +72,25 @@ Executing the previous script will produce an output file, geom_s4aim.qtaim, whi
     Atom      2 (C )  li =  3.968 +- 0.000 :  3.968 to  3.968 electrons.
     Atom      3 (C )  li =  3.889 +- 0.000 :  3.889 to  3.889 electrons.
     Atom      4 (C )  li =  3.889 +- 0.000 :  3.889 to  3.889 electrons.
+     . . . . . . . . 
+    . . . . . . . . 
 
-followed by the delocalisation indices of each of the pairs. For the latter, the results for the single pairs (upper triangular part of the matrix) are presented.
+followed by the delocalization indices of each of the pairs. For the latter, the results for the single pairs (upper triangular part of the matrix) are presented:
+
+    -----------------------------------------------------------------------------
+    ELECTRON DELOCALIZATION INDEX (DI)
+    -----------------------------------------------------------------------------
+    Pair      1     2 (C ,C ) DI =  1.513 +- 0.000 :  1.513 to  1.513 electrons.
+    Pair      1     3 (C ,C ) DI =  1.236 +- 0.000 :  1.236 to  1.237 electrons.
+    Pair      1     4 (C ,C ) DI =  0.059 +- 0.000 :  0.059 to  0.059 electrons.
+    Pair      1     5 (C ,C ) DI =  0.094 +- 0.000 :  0.094 to  0.094 electrons.
+    Pair      1     6 (C ,C ) DI =  0.073 +- 0.000 :  0.073 to  0.074 electrons.
+    Pair      1     7 (C ,C ) DI =  0.067 +- 0.000 :  0.067 to  0.067 electrons.
+    Pair      1     8 (C ,C ) DI =  0.024 +- 0.000 :  0.024 to  0.024 electrons.
+    Pair      1     9 (C ,C ) DI =  0.025 +- 0.000 :  0.024 to  0.025 electrons.
+    Pair      1    10 (C ,C ) DI =  0.011 +- 0.000 :  0.011 to  0.011 electrons.
+    Pair      1    11 (C ,H ) DI =  0.952 +- 0.000 :  0.952 to  0.952 electrons.
+
     
 ## XCAI: Unravelling the dominant contributions to the group DI.
 
