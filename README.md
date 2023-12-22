@@ -45,8 +45,11 @@ The code requires other Python modules to run which will be installed along with
 
 In addition to the SchNet4AIM source code, this repository also includes a set of prototype scripts to exemplify its use, collected in the /examples/scripts/ directory.In particular, we include two key templates, one aimed at predicting the electronic QTAIM properties (Q, LI and DI) from a molecular geoemtry (including uncertainty estimates) and the other devoted to the analysis of the pairwise components that dominate the electronic delocalization between two groups or fragments along a sequential process. We note in passing that both are based on the proof-of-concept models incorporated in SchNet4AIM and are therefore only suitable for treating neutral C,H,O,N molecules.
 
+## Predicting QTAIM electronic properties.
+
     python predict_QTAIM_electron_metrics.py geom.xyz 6
 
+## XCAI: Unravelling the dominant pairwise contributions to the group electron delocalization
 
     python explain_group_DI.py 300K_trj.xyz
 
