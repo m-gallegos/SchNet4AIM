@@ -132,12 +132,12 @@ Besides this, the script also requires the follwoing variables to be specified i
 Following, we show an example of the values taken by the previous input variables (to be used in combination with the 13P-CO2_trj.xyz file.
 
     # INPUT VARIABLES:
-    #----------------------------------------------------------------------------
+    #------------------------------------------------------------------------------------------------------------------------
     group_a  =  [1,2,3]      # CO2 group formed by atoms 1, 2 and 3.
     group_b  =  [20,23,27]   # NH2 group of 13P formed by atoms 20, 23 and 27.
     threshold=  0.8          # The dominant contributions will be those which explain at least 80% of the overall group DIs.
     nproc    =  8            # Use 8 CPUs.
-    #----------------------------------------------------------------------------
+    #------------------------------------------------------------------------------------------------------------------------
 
 
 # References
