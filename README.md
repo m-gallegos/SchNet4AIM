@@ -28,6 +28,8 @@ The environment variables can be easily defined using a simple block of python c
 
 # Installation
 
+**SchNet4AIM can be installed under Python >= 3.7.3 and <= 3.11.5 versions. Furthermore, it is strongly enocuraged to use one of the latest pip managers (i.e 23.3.1 or 23.3.2 up to the date of release of SchNet4AIM) to aovid incompatibility problems.**
+
 SchNet4AIM can be easily installed using the pip Python package manager:
 
     pip install git+https://github.com/m-gallegos/SchNet4AIM.git
@@ -40,6 +42,12 @@ The code requires other Python modules to run which will be installed along with
 
     python -m venv venv
     source /venv/bin/activate  
+
+After activating the Python environment, make sure to update the pip manager as:
+    
+    pip install --upgrade pip
+
+**Note: some (specially old) architectures are known to struggle accessing certain libraries or may raise problems (e.g RunTimeErrors) when importing certain modules (as for instance found in the particlar case of torch and sklearn packages). These problems are, however, not related to SchNet4AIM and are likely to be caused by Python incompatibility issues in old archiectures.**
 
 # Examples
 
@@ -56,8 +64,8 @@ The script /examples/scripts/predict_QTAIM_electron_metrics.py is a simple pytho
   * geom.xyz : file containing the molecular geometry in XYZ cartesian coordinates. In the  /examples/scripts/ folder you will find an exmaple of a typical geometry file (naphthalene.xyz).
   * nproc    : number of CPUs to be employed in the calculation.
 
+In the example, the geometry of naaphthalene is included.
 ![Figure](src/SchNet4AIM/examples/scripts/naphthalene.png)
-
 Executing the previous script will produce an output file, geom_s4aim.qtaim, which comprises the SchNet4AIM predictions along with their uncertainties.The output format used is the following: first, the atomic properties (charges and LIs) appear in increasing order of the atoms, 
 
     -----------------------------------------------------------------------------
@@ -185,9 +193,9 @@ Executing the code will print the results of the XCAI analysis of the group DI w
     # Dominant components saved to  13P-CO2_trj_dominant_di_0.8.txt
    ----------------------------------------------------------------------------------
 
-In this particular case, variables 7 and 8 (corresponding to the O3-N20 and O3-H23 interactions) dominate (up to an 80%) the net group deloclization between the CO2 and NH2 moieties. Besides this, the script produces two files: trj_file_group_di.txt (gathering the evolution of the group DI along with its pairwise components trhoughout the simulation) and the trj_file_dominant_di_threshold.txt (gathering the evolution of the group DI along with the reconstructed value from its dominant pairwise contributions).
-
+In this particular case, variables 7 and 8 (corresponding to the O3-N20 and O3-H23 interactions) dominate (up to an 80%) the net group deloclization between the CO2 and NH2 moieties. Besides this, the script produces two files: trj_file_group_di.txt (gathering the evolution of the group DI along with its pairwise components trhoughout the simulation) and the trj_file_dominant_di_threshold.txt (gathering the evolution of the group DI along with the reconstructed value from its dominant pairwise contributions). The latter can be easily plotted,
 ![Figure](src/SchNet4AIM/examples/scripts/13P-CO2-NH2.png)
+showing that in such a particular time-window the CO2 molecule gets closer to one of the NH2 moieties of the 13P skeleton, resulting in the emergence of O-H and O-N interactions, in agreement with the SchNet4AIM XCAI trends.
 
 # References
 
