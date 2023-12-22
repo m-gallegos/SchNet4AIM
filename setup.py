@@ -39,6 +39,7 @@ if __name__ == "__main__":
                 'examples/models/energetic/model*',
                 'examples/utils/*.py',
                 'examples/scripts/*.py',
+                'examples/scripts/*.xyz',
                 'examples/*.py',
         ]}
     )
