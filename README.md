@@ -67,7 +67,7 @@ The script /examples/scripts/predict_QTAIM_electron_metrics.py is a simple pytho
 In the example, the geometry of naphthalene is included.
 ![Figure](src/SchNet4AIM/examples/scripts/naphthalene.png)
 
-Executing the previous script will produce an output file, geom_s4aim.qtaim, which comprises the SchNet4AIM predictions along with their uncertainties.The output format used is the following: first, the atomic properties (charges and LIs) appear in increasing order of the atoms, 
+Executing the previous script will produce an output file, **geom_s4aim.qtaim**, which comprises the SchNet4AIM predictions along with their uncertainties.The output format used is the following: first, the atomic properties (charges and LIs) appear in increasing order of the atoms, 
 
     -----------------------------------------------------------------------------
     ATOMIC CHARGE (Q)
@@ -194,8 +194,10 @@ Executing the code will print the results of the XCAI analysis of the group DI w
     # Dominant components saved to  13P-CO2_trj_dominant_di_0.8.txt
    ----------------------------------------------------------------------------------
 
-In this particular case, variables 7 and 8 (corresponding to the O3-N20 and O3-H23 interactions) dominate (up to an 80%) the net group delocalization between the CO2 and NH2 moieties. Besides this, the script produces two files: trj_file_group_di.txt (gathering the evolution of the group DI along with its pairwise components throughout the simulation) and the trj_file_dominant_di_threshold.txt (gathering the evolution of the group DI along with the reconstructed value from its dominant pairwise contributions). The latter can be easily plotted,
+In this particular case, variables 7 and 8 (corresponding to the O3-N20 and O3-H23 interactions) dominate (up to an 80%) the net group delocalization between the CO2 and NH2 moieties. Besides this, the script produces two files: **trj_file_group_di.txt** (gathering the evolution of the group DI along with its pairwise components throughout the simulation) and the **trj_file_dominant_di_threshold.txt** (gathering the evolution of the group DI along with the reconstructed value from its dominant pairwise contributions). The latter can be easily plotted,
+
 ![Figure](src/SchNet4AIM/examples/scripts/13P-CO2-NH2.png)
+
 showing that in such a particular time-window the CO2 molecule gets closer to one of the NH2 moieties of the 13P skeleton, resulting in the emergence of O-H and O-N interactions, in agreement with the SchNet4AIM XCAI trends.
 
 # References
