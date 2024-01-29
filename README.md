@@ -24,9 +24,49 @@ The environment variables can be easily defined using a simple block of python c
     os.environ['DBmode']  = dbmode
     os.environ['frset']   = os.pathsep.join(str(i) for i in sorted(elements))
 
+# System Requirements
 
+## Hardware requirements
 
-# Installation
+SchNet4AIM package requires only a standard computer with enough RAM to support the in-memory operations. GPUs can be used if desired. 
+
+## Software requirements
+
+SchNet4AIM requires Python version 3.7.3 or higher and is compatible with versions up to 3.11.5. Ensure that you have a compatible Python installation before proceeding. It is strongly recommended to use one of the latest pip managers to install and manage dependencies. Specifically, versions 23.3.1 or 23.3.2 are recommended, up to the date of the SchNet4AIM release. Using the latest pip managers helps prevent compatibility issues and ensures a smooth installation process. The code has undergone thorough testing across various Python versions, including 3.7.3, 3.7.12, 3.8.2, 3.10.12, and 3.11.5.
+
+### OS Requirements
+
+The package is designed to be compatible with any operating system capable of running the mentioned Python versions. However, the use of Linux is generally encouraged. SchNet4AIM has undergone extensive testing on various distributions, including Ubuntu 22.04.3, Debian GNU/Linux 8.11, CentOS Linux release 7.9.2009, Debian GNU/Linux 10, and Ubuntu 20.04.6.
+
+### Python Dependencies
+
+SchNet4AIM relies on the following Python packages and modules:
+
+   ase==3.22.1
+   cycler==0.11.0
+   fonttools==4.38.0
+   joblib==1.3.2
+   kiwisolver==1.4.4
+   matplotlib>=3.5.3,<=3.8.2
+   numpy>=1.21.6,<1.24
+   nvidia-cublas-cu11==11.10.3.66
+   nvidia-cuda-nvrtc-cu11==11.7.99
+   nvidia-cuda-runtime-cu11==11.7.99
+   nvidia-cudnn-cu11==8.5.0.96
+   packaging==23.1
+   Pillow==9.5.0
+   psutil==5.9.7
+   pyparsing==3.1.0
+   python-dateutil==2.8.2
+   scikit-learn>=1.0.2,<=1.3.2
+   scipy>=1.7.3,<=1.10.1
+   six==1.16.0
+   threadpoolctl>=3.1.0,<=3.2.0
+   torch==1.13.1
+   tqdm==4.65.0
+   typing_extensions==4.7.1
+   
+# Installation guide
 
 **SchNet4AIM can be installed under Python >= 3.7.3 and <= 3.11.5 versions. Furthermore, it is strongly encouraged to use one of the latest pip managers (i.e 23.3.1 or 23.3.2 up to the date of release of SchNet4AIM) to avoid incompatibility problems.**
 
