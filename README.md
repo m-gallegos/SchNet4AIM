@@ -87,6 +87,8 @@ Alternatively, one can download the zip file from the SchNet4AIM GitHub and run 
 
     pip install SchNet4AIM-main.zip
 
+The standard installation time on a regular desktop computer typically takes no longer than 2 minutes.
+
 **Some (specially old) architectures are known to struggle accessing certain libraries or may raise problems (e.g RunTimeErrors) when importing certain modules (as for instance found in the particular case of torch and sklearn packages). These problems are, however, not related to SchNet4AIM and are likely to be caused by Python incompatibility issues in old architectures.**
 
 # Examples
