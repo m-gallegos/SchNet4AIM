@@ -42,29 +42,29 @@ The package is designed to be compatible with any operating system capable of ru
 
 SchNet4AIM relies on the following Python packages and modules:
 
-   ase==3.22.1
-   cycler==0.11.0
-   fonttools==4.38.0
-   joblib==1.3.2
-   kiwisolver==1.4.4
-   matplotlib>=3.5.3,<=3.8.2
-   numpy>=1.21.6,<1.24
-   nvidia-cublas-cu11==11.10.3.66
-   nvidia-cuda-nvrtc-cu11==11.7.99
-   nvidia-cuda-runtime-cu11==11.7.99
-   nvidia-cudnn-cu11==8.5.0.96
-   packaging==23.1
-   Pillow==9.5.0
-   psutil==5.9.7
-   pyparsing==3.1.0
-   python-dateutil==2.8.2
-   scikit-learn>=1.0.2,<=1.3.2
-   scipy>=1.7.3,<=1.10.1
-   six==1.16.0
-   threadpoolctl>=3.1.0,<=3.2.0
-   torch==1.13.1
-   tqdm==4.65.0
-   typing_extensions==4.7.1
+    ase==3.22.1
+    cycler==0.11.0
+    fonttools==4.38.0
+    joblib==1.3.2
+    kiwisolver==1.4.4
+    matplotlib>=3.5.3,<=3.8.2
+    numpy>=1.21.6,<1.24
+    nvidia-cublas-cu11==11.10.3.66
+    nvidia-cuda-nvrtc-cu11==11.7.99
+    nvidia-cuda-runtime-cu11==11.7.99
+    nvidia-cudnn-cu11==8.5.0.96
+    packaging==23.1
+    Pillow==9.5.0
+    psutil==5.9.7
+    pyparsing==3.1.0
+    python-dateutil==2.8.2
+    scikit-learn>=1.0.2,<=1.3.2
+    scipy>=1.7.3,<=1.10.1
+    six==1.16.0
+    threadpoolctl>=3.1.0,<=3.2.0
+    torch==1.13.1
+    tqdm==4.65.0
+    typing_extensions==4.7.1
    
 # Installation guide
 
