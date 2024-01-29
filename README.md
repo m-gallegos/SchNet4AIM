@@ -91,7 +91,7 @@ The standard installation time on a regular desktop computer typically takes no 
 
 **Some (specially old) architectures are known to struggle accessing certain libraries or may raise problems (e.g RunTimeErrors) when importing certain modules (as for instance found in the particular case of torch and sklearn packages). These problems are, however, not related to SchNet4AIM and are likely to be caused by Python incompatibility issues in old architectures.**
 
-# Examples
+# Examples (Demo)
 
 In addition to the SchNet4AIM source code, this repository also includes a set of prototype scripts to exemplify its use, collected in the /examples/scripts/ directory.In particular, we include two key templates, one aimed at predicting the electronic QTAIM properties (Q, LI and DI) from a molecular geometry (including uncertainty estimates) and the other devoted to the analysis of the pairwise components that dominate the electron delocalization between two groups or fragments along a sequential process. We note in passing that both are based on the proof-of-concept models incorporated in SchNet4AIM and are therefore only suitable for treating neutral C,H,O,N molecules. All molecular geometries must be given as XYZ files (in Angstroms).
 
@@ -148,7 +148,9 @@ followed by the delocalization indices of each of the pairs. For the latter, the
     . . . . . . . . 
     . . . . . . . . 
 We note in passing that the uncertainties are based on the accuracy with which SchNet4AIM reconstructs the total number of electrons of the molecule (either from the atomic charges or the localized and delocalized electron populations). Since the proof-of-concept models used have been independently trained, the latter terms are not bound to be exactly additive, which leads to the reported uncertainty in the predictions.
-    
+
+The standard execution time on a regular desktop computer typically takes no longer than 2 seconds.
+
 ## XCAI: Unraveling the dominant contributions to the group DI.
 
 The /examples/scripts/explain_group_DI.py script is a simple Python template designed to identify the dominant pairwise interactions that dominate the behavior of a global property (in this case, the group delocalization index), thanks to the inherent explainability of SchNet4AIM models. The script receives a single command-line argument, being the name of the trajectory file in Cartesian coordinates (**trj_file.xyz**)
@@ -241,6 +243,8 @@ In this particular case, variables 7 and 8 (corresponding to the O3-N20 and O3-H
 ![Figure](src/SchNet4AIM/examples/scripts/13P-CO2-NH2.png)
 
 showing that in such a particular time-window the CO2 molecule gets closer to one of the NH2 moieties of the 13P skeleton, resulting in the emergence of O-H and O-N interactions, in agreement with the SchNet4AIM XCAI trends.
+
+The standard execution time on a regular desktop computer is typically 0.4 seconds per geometry, with the particular example given taking approximately 40 seconds.
 
 # References
 
