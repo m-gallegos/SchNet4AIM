@@ -91,7 +91,7 @@ The standard installation time on a regular desktop computer typically takes no 
 
 **Some (specially old) architectures are known to struggle accessing certain libraries or may raise problems (e.g RunTimeErrors) when importing certain modules (as for instance found in the particular case of torch and sklearn packages). These problems are, however, not related to SchNet4AIM and are likely to be caused by Python incompatibility issues in old architectures.**
 
-# Examples (Demo)
+# Instructions for Use and Examples (Demo)
 
 In addition to the SchNet4AIM source code, this repository also includes a set of prototype scripts to exemplify its use, collected in the /examples/scripts/ directory.In particular, we include two key templates, one aimed at predicting the electronic QTAIM properties (Q, LI and DI) from a molecular geometry (including uncertainty estimates) and the other devoted to the analysis of the pairwise components that dominate the electron delocalization between two groups or fragments along a sequential process. We note in passing that both are based on the proof-of-concept models incorporated in SchNet4AIM and are therefore only suitable for treating neutral C,H,O,N molecules. All molecular geometries must be given as XYZ files (in Angstroms).
 
